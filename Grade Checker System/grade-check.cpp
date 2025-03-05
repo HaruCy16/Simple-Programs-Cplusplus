@@ -25,7 +25,7 @@ class Main : public Grades
     int studentID;
     string course;
     double totalGrade;
-    double average;
+    int average;
 
   public:
     void checkInformation(){
@@ -65,8 +65,8 @@ class Main : public Grades
       
       cout << "======================================================" << endl;
 
-      totalGrade = RPH + comProg + DSA + PE + linearAlgebra + fili + STS + NSTP;
-      average = totalGrade / 8;
+      totalGrade = RPH + comProg + DSA + PE + linearAlgebra + fili + STS + NSTP / 8;
+      average = (int)totalGrade;
 
       if (average >= 75){
         cout << "Congratulations!" << studentName << "You passed the semester with an average grade of " << average << endl;
