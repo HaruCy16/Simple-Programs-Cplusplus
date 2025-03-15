@@ -47,7 +47,7 @@ int main() {
     account.deposit(amount);
 
     cout << "Enter amount to withdraw: ";
-    cin >> amount;
+    cin >> amount; 
     account.withdraw(amount);
 
     account.display();  //Display final balance
