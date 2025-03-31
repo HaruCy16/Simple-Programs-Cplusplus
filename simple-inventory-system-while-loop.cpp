@@ -31,6 +31,7 @@ public:
         }
     }
 
+    //GETTERS TO ACCESS SI PRIVATE VARIABLES
     string getName() { return name; }
     int getStock() { return stock; }
     double getPrice() { return price; }
